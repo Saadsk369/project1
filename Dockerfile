@@ -7,6 +7,6 @@ WORKDIR /var/www/html
 RUN unzip listrace.zip
 RUN cp -rvf listrace-v1.0/* .
 RUN rm -rf listrace.zip listrace-v1.0
-CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 EXPOSE 80
 
