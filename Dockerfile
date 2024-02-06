@@ -8,4 +8,4 @@ RUN unzip oxer.zip
 RUN cp -rvf oxer-html/* .
 RUN rm -rf oxer.zip oxer-html
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 
